@@ -3,6 +3,9 @@ html,body,#app {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* 全页面最小宽度，页面不足1366时，会强制限制在1366px */
+    /* 限制在1366px同时出现可以左右滑动的滑块 */
+    min-width: 1366px;
 }
 /* 重置全局面包屑的样式 */
 .el-breadcrumb {
