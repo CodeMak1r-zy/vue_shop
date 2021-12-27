@@ -220,10 +220,10 @@ export default {
                 })
 
                 if(res.meta.status !== 200) {
-                    return this.$message.error('编辑用户信息失败！')
+                    return this.$message.error('编辑角色信息失败！')
                 }
                 // 提示编辑成功
-                this.$message.success('编辑用户信息成功！')
+                this.$message.success('编辑角色信息成功！')
                 // 编辑成功后关闭对话框
                 this.editDialogVisible = false
                 // 重新获取角色列表
@@ -239,7 +239,8 @@ export default {
             type: 'warning' //左侧感叹号小图标
             // 用.catch捕获取消操作
         }).catch(err => err)
-        // 若用户确定删除，confirmResult返回confirm
+        // 若用户确定删除，confirmResult返回字符串"confirm"
+        // 若用户取消删除,confirmResult返回字符串"cancel"
         if(confirmResult !== 'confirm') {
             return this.$message.info('Deletion cancelled!')
         }
@@ -274,6 +275,7 @@ export default {
         // 把服务器返回的最新的权限，直接赋值给children属性
         // children变化了，整个v-for循环的数组就发生了变化，所以整个v-for遍历出的元素就发生了变化
         // 动态的让e-tag中的插值表达式发生变化，达到页面/列表不刷新，单独让标签消失的效果
+        
         role.children = res.data
         },
         // 展示分配权限的对话框

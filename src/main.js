@@ -6,6 +6,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 // 导入全局样式表
 import './assets/css/global.css'
+// 导入vue-table-with-tree-grid 依赖
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -22,6 +24,11 @@ Vue.prototype.$axios = axios
 // 为vue原型对象手动挂载了一个$axios函数
 // 给所有组件注册了一个属性 $axios,所有组件都可以用 this.$axios 来使用axios(ajax异步请求);
 Vue.config.productionTip = false
+
+// 将 TreeTable 注册为全局可用的组件
+// 可以在全局通过 <tree-table></tree-table> 去使用
+Vue.component('tree-table', TreeTable)
+
 Vue.use(ElementUI);
 
 new Vue({
