@@ -10,14 +10,12 @@
       <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" label-width="0px" class="login_form">
         <!-- 用户名 -->
         <el-form-item prop="username">
-          <el-input prefix-icon="el-icon-s-custom" v-model.trim="loginForm.username" 
-          @keyup.enter.native="login"></el-input>
+          <el-input prefix-icon="el-icon-s-custom" v-model.trim="loginForm.username" @keyup.enter.native="login"></el-input>
         </el-form-item>
         <!-- 密码 -->
         <el-form-item prop="password">
           <!-- v-model.trim中的trim指的是输入框中无法输入空格 -->
-          <el-input prefix-icon="el-icon-lock" v-model.trim="loginForm.password" 
-          @keyup.enter.native="login" type="password"></el-input>
+          <el-input prefix-icon="el-icon-lock" v-model.trim="loginForm.password" @keyup.enter.native="login" type="password"></el-input>
         </el-form-item>
         <!-- 按钮区域 -->
         <el-form-item class="btns">
@@ -36,7 +34,7 @@ export default {
       // 这是登录表单的数据绑定对象
       loginForm: {
         username: 'admin',
-        password: '123456',
+        password: '123456'
       },
       // 这是表单的验证规则对象
       loginFormRules: {
@@ -47,8 +45,8 @@ export default {
             min: 3,
             max: 10,
             message: '长度在 3 到 10 个字符',
-            trigger: 'blur',
-          },
+            trigger: 'blur'
+          }
         ],
         // 验证密码是否合法
         password: [
@@ -57,10 +55,10 @@ export default {
             min: 6,
             max: 15,
             message: '长度在 6 到 15 个字符',
-            trigger: 'blur',
-          },
-        ],
-      },
+            trigger: 'blur'
+          }
+        ]
+      }
     }
   },
   methods: {
@@ -95,8 +93,8 @@ export default {
         // 2.通过编程式导航跳转到后台主页，路由地址是 /home
         this.$router.push('/home')
       })
-    },
-  },
+    }
+  }
 }
 </script>
 
