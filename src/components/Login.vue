@@ -79,8 +79,9 @@ export default {
         if (res.meta.status !== 200) return this.$message.error('登录失败！')
         // this.$message.success('登录成功')
         this.$message({
-          message: '登录成功！',
+          message: 'At your service, sir!',
           type: 'success',
+          center: true,
           duration: 1000 //提示框显示时间改为1秒，默认值3秒
         })
         // 1.将登录成功之后的token，保存到客户端的sessionStorage中

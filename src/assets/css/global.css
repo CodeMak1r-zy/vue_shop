@@ -25,3 +25,15 @@ html,body,#app {
 .el-pagination {
     margin-top: 15px;
 }
+.el-steps {
+    margin: 15px 0;
+}
+
+.el-step__title {
+    font-size: 13px;
+}
+
+/* 富文本编辑器的最小高度为300px */
+.ql-editor {
+    min-height: 300px;
+  }
