@@ -1,6 +1,9 @@
-# vue_shop
-一个基于Vue2 和 elementUI 的电商后台管理系统
-主要技术栈有:
+# vue_shop ⌘ ⌘
+一个基于Vue2 和 elementUI 的电商后台管理系统    
+An e-commerce background management system based on vue2 + elementui component library    
+
+==dependencies ⏎ == 
+
 
 `"axios":"^0.24.0",`   
 `"core-js":"^3.6.5",`  
@@ -16,19 +19,19 @@
 `"vuex": "^3.4.0"`   
 
 
-## 通过以下命令来配置环境
+## Getting Started ▶️ ✅
 ```
 npm install
 cnpm install
 ```
 
-### 运行
+### Run ▶️ ✅
 ```
 npm run serve
 cnpm run serve
 ```
 
-### 打包
+### Building ▶️ ✅
 ```
 npm run build
 cnpm run build
@@ -39,12 +42,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ---
 
-`如果你喜欢的话,记得留下你的star✨✨`   
-`你还可以联系我:pseudonymgeanmu@163.com`   
+`If you like this,plz star!✨✨`   
+`You can contact me through:pseudonymgeanmu@163.com`   
 Blog in:  [CSDN](https://blog.csdn.net/Svik_zy?spm=1000.2115.3001.5343)  
-github:  [github](https://github.com/CodeMak1r-zy?tab=repositories)
+gitee:  [gitee](https://gitee.com/CodeMak1r)
 
-
+🤓 🤓
 
 
 ---
