@@ -1,8 +1,10 @@
 # vue_shop ⌘ ⌘
 一个基于Vue2 和 elementUI 的电商后台管理系统    
-An e-commerce background management system based on vue2 + elementui component library    
+An e-commerce background management system based on vue2 + elementui component library   
 
-You can review [ONLINE](https://github1s.com/CodeMak1r-zy/vue_shop)
+[Click this](https://github.com/CodeMak1r-zy/vue_shop_api) to get the api files.
+
+You also can review [ONLINE](https://github1s.com/CodeMak1r-zy/vue_shop)
 
 ==dependencies ⏎ == 
 
